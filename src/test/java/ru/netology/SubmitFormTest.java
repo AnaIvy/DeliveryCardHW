@@ -10,7 +10,6 @@ import static com.codeborne.selenide.Selenide.*;
 class SubmitFormTest {
     @Test
     void shouldSendFormToOrderDelivery() {
-        Configuration.holdBrowserOpen = true;
         open("http://0.0.0.0:9999");
         $("[data-test-id='city'] input").setValue("Чебоксары");
         $("[pattern]").setValue("11.05.2023");
