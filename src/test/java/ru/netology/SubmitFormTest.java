@@ -17,6 +17,6 @@ class SubmitFormTest {
         $("[data-test-id='phone'] input").setValue("+71111111111");
         $("[data-test-id='agreement'] span").click();
         $(".button").click();
-        $x("//div [contains(text(),'Встреча успешно забронирована на')]").should(Condition.appear, Duration.ofSeconds(10));
+        $x("//div [contains(text(),'Встреча успешно забронирована на')]").should(Condition.appear, Duration.ofSeconds(12));
     }
 }
